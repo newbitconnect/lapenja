@@ -91,5 +91,589 @@
         </nav>
         <button class="cta-button">Solicitar Información</button>
     </header>
+    <!-- Sección Hero -->
+<section id="hero" class="hero-section">
+    <div class="hero-content">
+        <h1>Crea Tu Presencia Digital con Estilo Catalán</h1>
+        <p>Logotipos, webs y redes, todo en un solo paquete diseñado para destacar.</p>
+        <button class="hero-button">Ver Paquetes</button>
+    </div>
+</section>
+
+<style>
+    /* Hero Section */
+    .hero-section {
+        height: 100vh; /* Ocupa toda la altura de la ventana */
+        background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover; /* Imagen de fondo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        padding: 20px;
+    }
+
+    .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Capa oscura para resaltar el texto */
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-button {
+        padding: 12px 25px;
+        background-color: #ff7f50;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .hero-button:hover {
+        background-color: #ff5733;
+        transform: scale(1.1);
+    }
+
+    .hero-button:active {
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 768px) {
+        .hero-content h1 {
+            font-size: 2rem;
+        }
+
+        .hero-content p {
+            font-size: 1rem;
+        }
+
+        .hero-button {
+            font-size: 0.9rem;
+        }
+    }
+</style>
+<!-- Sección Servicios -->
+<section id="servicios" class="services-section">
+    <h2>Nuestros Servicios</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="https://via.placeholder.com/100" alt="Diseño de Logotipos">
+            <h3>Diseño de Logotipos</h3>
+            <p>Creamos logotipos únicos que representan la esencia de tu marca.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://via.placeholder.com/100" alt="Páginas Web">
+            <h3>Creación de Páginas Web</h3>
+            <p>Desarrollamos páginas web modernas y funcionales para destacar en línea.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://via.placeholder.com/100" alt="Redes Sociales">
+            <h3>Gestión de Redes Sociales</h3>
+            <p>Configuramos y optimizamos tus perfiles en redes sociales.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://via.placeholder.com/100" alt="Gestión de Dominios">
+            <h3>Gestión de Dominios</h3>
+            <p>Nos encargamos de registrar y administrar tu dominio web.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Servicios Section */
+    .services-section {
+        padding: 50px 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+
+    .services-section h2 {
+        font-size: 2rem;
+        color: #ff7f50;
+        margin-bottom: 30px;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .service-card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card img {
+        width: 80px;
+        margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .service-card p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    @media screen and (max-width: 768px) {
+        .services-section h2 {
+            font-size: 1.8rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+        }
+
+        .service-card p {
+            font-size: 0.9rem;
+        }
+    }
+</style>
+<!-- Sección Paquetes -->
+<section id="paquetes" class="packages-section">
+    <h2>Nuestros Paquetes</h2>
+    <div class="packages-grid">
+        <div class="package-card">
+            <h3>Pack Básico</h3>
+            <p>Incluye logotipo profesional y configuración básica de redes sociales.</p>
+            <p class="price">€150</p>
+            <button class="package-button">Más Información</button>
+        </div>
+        <div class="package-card">
+            <h3>Pack Creativo</h3>
+            <p>Logotipo avanzado, página web moderna y configuración de redes sociales.</p>
+            <p class="price">€300</p>
+            <button class="package-button">Más Información</button>
+        </div>
+        <div class="package-card">
+            <h3>Pack Premium</h3>
+            <p>Todo incluido: logotipo premium, página web completa y gestión avanzada de redes sociales.</p>
+            <p class="price">€500</p>
+            <button class="package-button">Más Información</button>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Sección Paquetes */
+    .packages-section {
+        padding: 50px 20px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .packages-section h2 {
+        font-size: 2rem;
+        color: #ff7f50;
+        margin-bottom: 30px;
+    }
+
+    .packages-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .package-card {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .package-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .package-card h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .package-card p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        font-size: 1.5rem;
+        color: #ff7f50;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .package-button {
+        padding: 10px 20px;
+        background-color: #ff7f50;
+        color: #fff;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .package-button:hover {
+        background-color: #ff5733;
+        transform: scale(1.05);
+    }
+
+    .package-button:active {
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 768px) {
+        .packages-section h2 {
+            font-size: 1.8rem;
+        }
+
+        .package-card h3 {
+            font-size: 1.3rem;
+        }
+
+        .package-card p {
+            font-size: 0.9rem;
+        }
+
+        .price {
+            font-size: 1.3rem;
+        }
+    }
+</style>
+<!-- Sección Testimonios -->
+<section id="testimonios" class="testimonials-section">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <blockquote>
+                "El equipo de La Penja entendió perfectamente mi visión y creó un logotipo que representa mi marca. ¡Increíble trabajo!"
+            </blockquote>
+            <p>- Marta G.</p>
+        </div>
+        <div class="testimonial-card">
+            <blockquote>
+                "El paquete Premium fue todo lo que necesitaba. Mi página web luce profesional y mis redes están mejor que nunca."
+            </blockquote>
+            <p>- Carlos R.</p>
+        </div>
+        <div class="testimonial-card">
+            <blockquote>
+                "Su atención al detalle es inigualable. Recomiendo La Penja a cualquiera que quiera destacar en el mundo digital."
+            </blockquote>
+            <p>- Ana L.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Testimonios Section */
+    .testimonials-section {
+        padding: 50px 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+
+    .testimonials-section h2 {
+        font-size: 2rem;
+        color: #ff7f50;
+        margin-bottom: 30px;
+    }
+
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .testimonial-card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .testimonial-card blockquote {
+        font-size: 1.2rem;
+        font-style: italic;
+        color: #555;
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+
+    .testimonial-card p {
+        font-size: 1rem;
+        color: #333;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+        .testimonials-section h2 {
+            font-size: 1.8rem;
+        }
+
+        .testimonial-card blockquote {
+            font-size: 1rem;
+        }
+
+        .testimonial-card p {
+            font-size: 0.9rem;
+        }
+    }
+</style>
+<!-- Sección Contacto -->
+<section id="contacto" class="contact-section">
+    <h2>Contacto</h2>
+    <p>¿Tienes preguntas o quieres saber más? Rellena el formulario y nos pondremos en contacto contigo.</p>
+    <form class="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit" class="submit-button">Enviar</button>
+    </form>
+</section>
+
+<style>
+    /* Contacto Section */
+    .contact-section {
+        padding: 50px 20px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .contact-section h2 {
+        font-size: 2rem;
+        color: #ff7f50;
+        margin-bottom: 20px;
+    }
+
+    .contact-section p {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-form label {
+        font-size: 1rem;
+        color: #333;
+        text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        color: #333;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border-color: #ff7f50;
+        box-shadow: 0 4px 8px rgba(255, 127, 80, 0.3);
+        outline: none;
+    }
+
+    .submit-button {
+        padding: 12px 20px;
+        background-color: #ff7f50;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .submit-button:hover {
+        background-color: #ff5733;
+        transform: scale(1.05);
+    }
+
+    .submit-button:active {
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 768px) {
+        .contact-section h2 {
+            font-size: 1.8rem;
+        }
+
+        .contact-section p {
+            font-size: 1rem;
+        }
+    }
+</style>
+<!-- Pie de Página -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 La Penja. Todos los derechos reservados.</p>
+        <nav class="footer-nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#paquetes">Paquetes</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+<style>
+    /* Footer */
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .footer-nav {
+        margin: 15px 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .footer-nav a {
+        color: #ff7f50;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .footer-nav a:hover {
+        color: #ff5733;
+        transform: scale(1.1);
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
+
+    .social-links a {
+        color: #ff7f50;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 1rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-links a:hover {
+        color: #ff5733;
+        transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer-nav {
+            gap: 10px;
+        }
+
+        .footer-nav a,
+        .social-links a {
+            font-size: 0.8rem;
+        }
+    }
+</style>
+
 </body>
 </html>
