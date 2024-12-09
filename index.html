@@ -154,6 +154,32 @@
         display: none;
     }
 }
+/* Botón de Chat Flotante */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.chat-button:hover {
+    background-color: #1DA851;
+    transform: scale(1.1);
+}
+
+.chat-button:active {
+    transform: scale(0.95);
+}
 
 
     </style>
@@ -769,6 +795,10 @@
         });
     });
 </script>
+<!-- Botón de Chat a WhatsApp -->
+<a href="https://wa.me/34600123456" target="_blank" class="chat-button" aria-label="Contactar por WhatsApp">
+    💬 Chat en WhatsApp
+</a>
 
 </body>
 </html>
